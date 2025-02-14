@@ -1,6 +1,3 @@
-// What are you doing here ??
-
-// Prevent right click and drag
 if (window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
 }
@@ -12,7 +9,6 @@ document.addEventListener('dragstart', function(e) {
 });
 document.body.style.userSelect = 'none';
 
-// dark / light mod
 document.addEventListener('DOMContentLoaded', () => {
     const switchElement = document.querySelector('.switch');
     const sunElement = document.querySelector('.sun');
@@ -50,9 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-// animations
 const elements = document.querySelectorAll('.fade-in-on-scroll');
 
 function handleScroll() {
@@ -66,25 +59,23 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
-// show the widget
+
 document.querySelector('.widget').addEventListener('click', (event) => {
     event.preventDefault();
     var box = document.querySelector('.box');
     box.classList.toggle('hidden');
 });
 
-// show the contact
-var toggleForm = document.getElementById('toggleForm');
-    var formContainer = document.getElementById('formContainer');
+// var toggleForm = document.getElementById('toggleForm');
+//     var formContainer = document.getElementById('formContainer');
 
-    toggleForm.addEventListener('click', function(e) {
-        e.preventDefault();
-        formContainer.classList.toggle('visible'); 
-});
+//     toggleForm.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         formContainer.classList.toggle('visible'); 
+// });
 
-// send message to mail
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// document.getElementById('contactForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
    
-    }
-);
+//     }
+// );
