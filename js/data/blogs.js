@@ -1,72 +1,30 @@
 const blogData = [
     {
-        id: "blog1",
-        title: "Getting Started with C++",
-        date: "June 15, 2023",
-        excerpt: "An introduction to C++ programming for beginners, covering basic syntax and concepts.",
-        content: [
-            "C++ is a powerful general-purpose programming language. It can be used to develop operating systems, browsers, games, and so on. C++ supports different ways of programming like procedural, object-oriented, functional, and so on. This makes C++ powerful as well as flexible.",
-            "In this blog post, we'll cover the basic syntax and concepts that you need to get started with C++ programming. We'll explore variables, data types, control structures, functions, and more."
+        "id": "blog1",
+        "title": "About Me",
+        "date": "April 4, 2025",
+        "excerpt": "Not the version everyone sees — but the version that feels lost, tired, and unsure of how to keep going. A glimpse into the quiet chaos behind the mask.",
+        "content": [
+            "About me? I guess that depends on which version you're asking about. The one people see — smiling, functioning, saying all the right things — or the one underneath it all, trying to remember what it felt like to truly live, not just exist.",
+            "Lately, it’s like I’m watching my own life through a foggy window. Things happen, time passes, people talk — and I respond — but it all feels distant, like I’m not fully here. I do what I have to. I show up. I pretend. But pretending gets heavy, especially when it’s all you’ve been doing for a while.",
+            "I lost someone. Maybe that’s when it all cracked, or maybe it just revealed how broken I already was. Either way, their absence left a hole that hasn’t healed, and I’m scared it never will. They were my anchor when everything else felt meaningless.",
+            "What’s worse is the fear — the fear of slipping back into that dark place I thought I’d climbed out of. I know how bad it can get. How hard it is to breathe when the weight won’t let up. And some days, it feels like I'm right back there again, teetering on the edge of giving up but still hoping something will pull me back.",
+            "If this blog is supposed to be 'About Me,' then here it is: I’m not okay. I don’t know what I need. I don’t have it figured out. But I’m still here, even if I don’t know why. And maybe, for now, that’s enough."
         ]
-    },
+    },    
     {
-        id: "blog2",
-        title: "Assembly Programming Basics",
-        date: "August 22, 2023",
-        excerpt: "Exploring the fundamentals of assembly language programming and its applications.",
-        content: [
-            "Assembly language is a low-level programming language for a computer or other programmable device specific to a particular computer architecture. Unlike high-level languages, assembly language is very close to machine code, the actual instructions that a computer's CPU executes.",
-            "In this blog, we explore the basics of x86 assembly, including registers, memory addressing, basic instructions, and how to write your first assembly program."
-        ]
-    },
-    {
-        id: "blog3",
-        title: "Building Your First Game Engine",
-        date: "October 5, 2023",
-        excerpt: "A step-by-step guide to creating a simple game engine from scratch.",
-        content: [
-            "Creating your own game engine is a rewarding experience that can deepen your understanding of game development fundamentals. While there are many powerful engines available, building your own can teach you about rendering pipelines, physics simulations, input handling, and more.",
-            "This blog walks through the process of creating a simple 2D game engine using C++, including setting up a rendering system, implementing basic physics, and creating a component-based architecture."
-        ]
-    },
-    {
-        id: "blog4",
-        title: "Memory Management in C++",
-        date: "November 10, 2023",
-        excerpt: "Understanding manual and automatic memory management techniques in C++.",
-        content: [
-            "Memory management is a critical aspect of C++ programming. Unlike languages with garbage collection, C++ gives developers direct control over memory allocation and deallocation, which brings both power and responsibility.",
-            "In this article, we explore smart pointers, RAII (Resource Acquisition Is Initialization), memory leaks, and best practices for efficient memory management in modern C++ applications."
-        ]
-    },
-    {
-        id: "blog5",
-        title: "Exploring Game AI Techniques",
-        date: "December 3, 2023",
-        excerpt: "A look at common AI techniques used in game development and how to implement them.",
-        content: [
-            "Artificial intelligence in games ranges from simple decision trees to complex machine learning models. Understanding these techniques can help you create more engaging and challenging gameplay experiences.",
-            "We'll examine pathfinding algorithms like A*, behavior trees, finite state machines, and other common techniques used to create intelligent game agents that respond realistically to player actions."
-        ]
-    },
-    {
-        id: "blog6",
-        title: "Optimizing Game Performance",
-        date: "January 15, 2024",
-        excerpt: "Strategies for identifying and fixing performance bottlenecks in game development.",
-        content: [
-            "Performance optimization is crucial in game development, where frame rates and responsiveness directly impact player experience. Knowing how to profile and optimize your code can make the difference between a smooth game and a frustrating one.",
-            "This guide covers profiling tools, common bottlenecks, rendering optimizations, memory management, and techniques like object pooling that can help maintain high performance even in complex game scenes."
-        ]
-    },
-    {
-        id: "blog7",
-        title: "Implementing Physics in Games",
-        date: "February 20, 2024",
-        excerpt: "How to create realistic physics simulations for your game projects.",
-        content: [
-            "Physics simulations add realism and interactivity to games, but implementing them efficiently can be challenging. From collision detection to rigid body dynamics, there's a lot to consider when bringing physics to your game.",
-            "We'll look at both writing custom physics systems and leveraging existing physics engines, discussing the tradeoffs and considerations for different types of games and platforms."
+        "id": "blog2",
+        "title": "When Everything Feels Off: A Glimpse Into the Quiet Struggle",
+        "date": "April 4, 2025",
+        "excerpt": "A raw and honest reflection on emotional burnout, grief, and the weight of pretending to be okay when you're not.",
+        "content": [
+            "Sometimes life feels like it’s running on autopilot. You get up, go through the motions, and somehow end the day without really remembering how you got there. That’s the space they’re in — a quiet, hollow space where nothing quite feels real anymore.",
+            "They didn’t ask for this. They didn’t expect to lose the part of themselves that used to care, that used to light up at simple joys. But loss has a strange way of pulling the rug out from under us, making us question if we were ever really standing in the first place. And when that person — the one who brought even a sliver of meaning to the chaos — is gone? It leaves a void that feels impossible to fill.",
+            "What makes it harder is not the sadness alone, but the exhaustion. The exhaustion of pretending, of holding it together, of answering ‘I’m fine’ when the truth is far from it. They don’t want to ask for help — not because they’re too proud — but because they don’t even know what help looks like anymore. How do you describe a pain that doesn’t have a name? How do you fix something when you’re not sure what’s broken?",
+            "And maybe the scariest part? They're afraid they’re slipping back into the darkness they once fought so hard to escape. They know how heavy it can get, how isolating and numbing it becomes. The fear isn’t just about falling — it’s about not being able to climb out again.",
+            "But here’s the thing: even in the middle of all this, they’re still here. Still showing up. Still trying, even if it doesn’t feel like enough. And that matters. That counts.",
+            "This isn’t a story with a tidy ending. It’s not a blog wrapped in silver linings. But it’s real. And sometimes, being real is the most powerful thing you can be. Especially when the world expects you to pretend."
         ]
     }
+    
 ];
