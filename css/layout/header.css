@@ -1,0 +1,85 @@
+/* Header and center content styles */
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--testo-color);
+    width: 600px;
+    margin-top: 150px;
+}
+
+.center .t-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center .t-2 a {
+    background-color: var(--secondo-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--testo-color);
+    margin-top: -25px;
+    transition: .3s ease;
+}
+
+.center .t-2 a:hover {
+    background-color: var(--testo-color);
+    color: var(--sfondo-color);
+}
+
+.center .t-2 a i {
+    font-size: 20px;
+}
+
+.sun {
+    display: none;
+    height: 30px;
+}
+
+.moon {
+    display: flex;
+    height: 30px;
+}
+
+.thanks .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    gap: 10px;
+}
+
+.thanks a {
+    font-size: 18px;
+    color: var(--terzo-color);
+    padding: 10px 20px 10px 20px;
+    background-color: var(--secondo-color);
+    border-radius: 100px;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.end {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.thanks a i {
+    transform: rotate(135deg);
+    font-size: 20px;
+}
+
+.resume {
+    transition: .3s ease;
+}
+
+.resume:hover {
+    background-color: var(--testo-color);
+    color: var(--sfondo-color);
+}

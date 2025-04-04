@@ -1,0 +1,25 @@
+/* Main CSS file that imports all component files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Base styles */
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'base/animations.css';
+
+/* Components */
+@import 'components/sidebar.css';
+@import 'components/projects.css';
+@import 'components/timeline.css';
+@import 'components/tech.css';
+@import 'components/uses.css';
+@import 'components/cursor.css';
+
+/* Layout */
+@import 'layout/header.css';
+@import 'layout/grid.css';
+@import 'layout/responsive.css';
+
+/* Modules */
+@import 'modules/blogs.css';
+@import 'modules/forms.css';
+@import 'modules/particles.css';

@@ -1,0 +1,83 @@
+/* Base reset and CSS variables */
+:root {
+    --pallino-color: #ffffff3f;
+    --sfondo-color: #1a1a1a; 
+    --testo-color: #ffffff;
+    --secondo-color: #2d2f33;
+    --terzo-color: #e6e6e6e3;
+    --quarto-color: #494949e3;
+    --glass-bg: rgba(45, 47, 51, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    --primary-gradient: linear-gradient(45deg, #744dff, #e52e71);
+    --hover-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --theme-transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--theme-transition);
+    font-family: 'Rubik', sans-serif;
+    cursor: none;
+}
+
+body.dark-mode {
+    background-color: var(--sfondo-color);
+}
+
+/* Add transition to common elements that change with theme */
+body, body *, .wallpaper, .sidebar, .center, .project, .tech .icon, .uses .use, 
+.blogs-container, .blog-content p, .blog-entry h3, .blog-excerpt, .read-more, .read-less, 
+.timeline, .point, .particle, .line, .switch a {
+    transition-property: color, background-color, border-color, text-shadow, box-shadow, transform, opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wallpaper {
+    background-color: var(--sfondo-color);
+    color: var(--testo-color);
+    background-image: radial-gradient(circle, var(--pallino-color) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 30px 30px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+}
+
+.dot {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 600px 300px rgba(255, 255, 255, 0.09);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Glass morphism base style */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    box-shadow: var(--glass-shadow);
+    transition: var(--hover-transition);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}

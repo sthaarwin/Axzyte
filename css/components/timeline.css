@@ -1,0 +1,91 @@
+/* Timeline styles */
+.timeline {
+    display: flex;
+    position: relative;
+}
+
+.left {
+    width: 299px;
+}
+
+.left p {
+    text-align: right;
+    margin-right: 15px;
+    margin-left: 60px;
+}
+
+.left .para {
+    margin-top: 95px;
+}
+
+.left .cnt-2 {
+    margin-top: 147px;
+}
+
+.left .cnt-3 {
+    margin-top: 118px;
+}
+
+.right .cnt-2 {
+    margin-top: 115px;
+}
+
+.right .cnt-3 {
+    margin-top: 155px;
+}
+
+.right .cnt-4 {
+    margin-top: 130px;
+}
+
+.right {
+    width: 299px;
+}
+
+.right .para {
+    margin-top: -5px;
+}
+
+.right p {
+    margin-left: 15px;
+    margin-right: 60px;
+}
+
+.line-of-time {
+    width: 2px;
+    height: 650px;
+    background: linear-gradient(to bottom, #744dff, #e52e71);
+    box-shadow: 0 0 15px rgba(116, 77, 255, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--testo-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.point-1 { top: 0px; background: #744dff }
+.point-2 { top: 100px; }
+.point-3 { top: 200px; }
+.point-4 { top: 320px; }
+.point-6 { top: 425px; }
+.point-7 { top: 530px; }
+.point-8 { top: 640px; background: #744dff }
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--terzo-color);
+}

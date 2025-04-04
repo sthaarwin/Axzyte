@@ -1,0 +1,67 @@
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--testo-color);
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.center h3 {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 0px;
+}
+
+.center .colorfull-bg {
+    margin-top: -45px;
+    font-size: 50px;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.center .underlined {
+    position: absolute;
+    width: 140px;
+    height: 15px;
+    bottom: 2px;
+    right: 305px;
+    z-index: -1;
+    -moz-transform: skew(-15deg);
+    -webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    transform: skew(-15deg);
+    background: #744dff;
+}
+
+.center .gray-para {
+    margin-top: 30px;
+    color: var(--terzo-color);
+    display: flex;
+    line-height: 1.5;
+}
+
+.center .t-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center .t-1 .online {
+    width: 10px;
+    height: 10px;
+    background-color: #64bb49;
+    border-radius: 50%;
+}
+
+.thanks h3 {
+    font-size: 23px;
+    margin-top: 20px;
+}
