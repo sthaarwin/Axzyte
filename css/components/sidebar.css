@@ -100,6 +100,7 @@
         border-radius: 50px;
         padding: 5px;
         width: auto;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     }
 
     .sidebar .box {
@@ -114,5 +115,44 @@
 
     .widget {
         margin: 0 2px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .sidebar a {
+        padding: 10px;
+    }
+    
+    .sidebar a i {
+        font-size: 20px;
+    }
+    
+    .moon, .sun {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 380px) {
+    .sidebar {
+        padding: 4px;
+    }
+    
+    .sidebar a {
+        padding: 8px;
+    }
+    
+    .sidebar a i {
+        font-size: 18px;
+    }
+    
+    .widget {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .moon, .sun {
+        width: 24px;
+        height: 24px;
     }
 }

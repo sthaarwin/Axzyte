@@ -1,10 +1,6 @@
-// Scroll animations
 
 function initScrollAnimations() {
-    // Fade-in animations
     setupFadeInAnimations();
-    
-    // Parallax effects
     setupParallaxEffects();
 }
 
@@ -21,7 +17,6 @@ function setupFadeInAnimations() {
     }
     
     window.addEventListener('scroll', handleScroll);
-    // Initial check
     handleScroll();
 }
 

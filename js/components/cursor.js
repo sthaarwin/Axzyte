@@ -1,7 +1,4 @@
-// Custom cursor functionality
-
 function initCustomCursor() {
-    // Only show custom cursor on desktop devices
     if (window.innerWidth > 768 && !('ontouchstart' in window)) {
         const cursor = document.createElement('div');
         cursor.classList.add('cursor');
@@ -11,7 +8,6 @@ function initCustomCursor() {
         cursorDot.classList.add('cursor-dot');
         document.body.appendChild(cursorDot);
         
-        // Show cursors
         cursor.style.display = 'block';
         cursorDot.style.display = 'block';
         
@@ -23,7 +19,6 @@ function initCustomCursor() {
             cursorDot.style.top = e.clientY + 'px';
         });
         
-        // Cursor hover effect on interactive elements
         const interactiveElements = document.querySelectorAll('a, button, .project, .read-more, .read-less, .icon, .use');
         
         interactiveElements.forEach(el => {

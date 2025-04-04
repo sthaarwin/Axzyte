@@ -49,3 +49,38 @@
 .tech .icons .icon:hover i {
     transform: scale(1.2);
 }
+
+/* Mobile adjustments */
+@media (max-width: 630px) {
+    .tech .icons {
+        grid-gap: 12px;
+    }
+    
+    .tech .icons .icon {
+        height: 130px;
+        padding: 15px 5px;
+    }
+    
+    .tech .icons .icon h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    .tech .icons .icon i {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tech .icons .icon {
+        height: 110px;
+    }
+    
+    .tech .icons .icon h3 {
+        font-size: 15px;
+    }
+    
+    .tech .icons .icon i {
+        font-size: 30px;
+    }
+}

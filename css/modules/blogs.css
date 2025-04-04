@@ -69,8 +69,8 @@
 }
 
 .blog-entry {
-    margin-bottom: 40px;
-    padding-bottom: 35px;
+    margin-bottom: 50px;  /* Increased from 40px */
+    padding-bottom: 40px; /* Increased from 35px */
     border-bottom: 1px solid var(--pallino-color);
     transition: transform 0.3s ease;
 }
@@ -87,25 +87,54 @@
 
 .blog-entry h3 {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 15px; /* Increased from 12px */
     color: var(--testo-color);
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
+    padding: 5px 0;
+}
+
+/* Add click indicator for blog titles */
+.blog-entry h3::after {
+    content: '\25BC';  /* Downward triangle symbol */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Rotate triangle when expanded */
+.blog-entry.expanded h3::after {
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1;
+}
+
+.blog-entry h3:hover {
+    transform: translateX(3px);
 }
 
 .blog-date {
     font-size: 14px;
     color: var(--terzo-color);
-    margin-bottom: 18px;
+    margin-bottom: 22px; /* Increased from 18px */
     margin-top: 0;
 }
 
 .blog-excerpt {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased from 20px */
     color: var(--terzo-color);
 }
 
@@ -145,15 +174,15 @@
 
 .blog-content {
     display: none;
-    margin-top: 25px;
-    padding-top: 20px;
+    margin-top: 30px; /* Increased from 25px */
+    padding-top: 25px; /* Increased from 20px */
     border-top: 1px dashed var(--pallino-color);
 }
 
 .blog-content p {
     font-size: 16px;
     line-height: 1.8;
-    margin-bottom: 18px;
+    margin-bottom: 22px; /* Increased from 18px */
     color: var(--terzo-color);
 }
 
@@ -203,6 +232,8 @@
     margin-top: 30px;
     padding-top: 20px;
     border-top: 1px solid var(--pallino-color);
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .blog-pagination button {
@@ -210,12 +241,21 @@
     color: var(--testo-color);
     border: none;
     border-radius: 5px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     margin: 0 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: inherit;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 90px;
+}
+
+.blog-pagination button i {
+    font-size: 18px;
 }
 
 .blog-pagination button:hover {
@@ -292,18 +332,24 @@
     }
     
     .blog-entry {
-        margin-bottom: 40px;
-        padding-bottom: 40px;
+        margin-bottom: 45px;
+        padding-bottom: 45px;
     }
     
     .blog-entry h3 {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.3;
         margin-bottom: 15px;
+        padding-right: 20px; /* Space for arrow icon */
+    }
+    
+    .blog-date {
+        margin-bottom: 20px;
     }
     
     .blog-excerpt {
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: 15px;
+        line-height: 1.5;
         margin-bottom: 25px;
     }
     
@@ -323,8 +369,8 @@
     }
     
     .blog-content p {
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: 15px;
+        line-height: 1.6;
         margin-bottom: 20px;
     }
     
@@ -340,16 +386,36 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
+    /* Enhanced mobile pagination */
     .blog-pagination {
-        flex-wrap: wrap;
-        gap: 10px;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+    
+    .blog-pagination button {
+        padding: 10px;
+        margin: 0;
+        flex: 1;
+        min-height: 44px; /* Improved tap target size */
+    }
+    
+    .blog-pagination .page-info {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        font-size: 15px;
     }
     
     .blog-pagination .page-numbers {
-        order: 3;
         width: 100%;
         justify-content: center;
-        margin-top: 10px;
+        gap: 5px;
+    }
+    
+    .blog-pagination .page-number {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
     }
 }
 

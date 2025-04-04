@@ -2,7 +2,7 @@ const blogData = [
     {
         "id": "blog1",
         "title": "About Me",
-        "date": "April 4, 2025",
+        "date": "March 16, 2025",
         "excerpt": "Not the version everyone sees — but the version that feels lost, tired, and unsure of how to keep going. A glimpse into the quiet chaos behind the mask.",
         "content": [
             "About me? I guess that depends on which version you're asking about. The one people see — smiling, functioning, saying all the right things — or the one underneath it all, trying to remember what it felt like to truly live, not just exist.",
@@ -15,7 +15,7 @@ const blogData = [
     {
         "id": "blog2",
         "title": "When Everything Feels Off: A Glimpse Into the Quiet Struggle",
-        "date": "April 4, 2025",
+        "date": "April 1, 2025",
         "excerpt": "A raw and honest reflection on emotional burnout, grief, and the weight of pretending to be okay when you're not.",
         "content": [
             "Sometimes life feels like it’s running on autopilot. You get up, go through the motions, and somehow end the day without really remembering how you got there. That’s the space they’re in — a quiet, hollow space where nothing quite feels real anymore.",
@@ -25,6 +25,22 @@ const blogData = [
             "But here’s the thing: even in the middle of all this, they’re still here. Still showing up. Still trying, even if it doesn’t feel like enough. And that matters. That counts.",
             "This isn’t a story with a tidy ending. It’s not a blog wrapped in silver linings. But it’s real. And sometimes, being real is the most powerful thing you can be. Especially when the world expects you to pretend."
         ]
+    },
+    {
+        "id": "blog3",
+        "title": "If I Had to Start Coding All Over Again",
+        "date": "April 4, 2025",
+        "excerpt": "A personal take on how I’d approach learning to code from scratch — slower, simpler, and with less pressure to be perfect.",
+        "content": [
+            "If I had to start learning to code again, I think I’d do it differently this time. Not with 10 tabs open and five courses running at once, trying to 'catch up' to people I saw on the internet. Not chasing tutorials like a checklist or grinding through topics I didn’t understand just to feel like I was making progress.",
+            "I’d start simple — maybe with C or Python — and I’d take the time to actually understand what’s going on under the hood. Not just copy-pasting code that works, but asking *why* it works. What’s a variable really doing? How does memory get managed? What actually happens when I run a program?",
+            "I wouldn’t be afraid to break things. In fact, I’d expect it. The error messages, the bugs, the logic mistakes — they’re part of it. I used to treat those like failure, but now I know they’re where the real learning happens. Every ‘why isn’t this working?’ moment is a puzzle, not a wall.",
+            "I’d stop obsessing over frameworks and shiny tools right away. Those come later. At the beginning, it’s all about the fundamentals: loops, conditions, functions, data types, and eventually how things fit together. If I got those down solid, everything else would come easier.",
+            "And I’d build small things. Not because they’re impressive, but because they’re mine. A number guessing game, a to-do list, a basic terminal calculator — tiny projects that make me feel like I *can* do this. That sense of progress matters more than most people realize.",
+            "Lastly, I’d be kinder to myself. I’d stop comparing my journey to someone else’s highlight reel. I’d remember that struggling is normal, asking for help is smart, and that the people who seem to ‘get it’ probably started just as lost as I did.",
+            "If I had to start again, I’d take it one line at a time — and I’d be proud of every single one."
+        ]
     }
+    
     
 ];

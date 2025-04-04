@@ -49,3 +49,38 @@
 .uses .use-list .use:hover i {
     transform: scale(1.2);
 }
+
+/* Mobile adjustments */
+@media (max-width: 630px) {
+    .uses .use-list {
+        grid-gap: 12px;
+    }
+    
+    .uses .use-list .use {
+        height: 130px;
+        padding: 15px 5px;
+    }
+    
+    .uses .use-list .use h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    .uses .use-list .use i {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .uses .use-list .use {
+        height: 110px;
+    }
+    
+    .uses .use-list .use h3 {
+        font-size: 15px;
+    }
+    
+    .uses .use-list .use i {
+        font-size: 30px;
+    }
+}

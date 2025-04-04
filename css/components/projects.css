@@ -116,3 +116,47 @@
         left: 100%;
     }
 }
+
+/* Mobile adjustments */
+@media (max-width: 630px) {
+    .project {
+        min-height: 0;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    
+    .project .top {
+        padding: 12px 15px;
+    }
+    
+    .project h2 {
+        font-size: 18px;
+    }
+    
+    .project p {
+        margin: 0 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .project .top i {
+        opacity: 0.8; /* Show icons by default on mobile */
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .project .top {
+        padding: 10px 12px;
+    }
+    
+    .project h2 {
+        font-size: 16px;
+    }
+    
+    .project p {
+        margin: 0 12px;
+        font-size: 13px;
+        line-height: 1.3;
+    }
+}
